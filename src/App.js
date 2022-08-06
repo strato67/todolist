@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import Navbar from './Components/Navbar';
 import './app.css';
+
 const App = ()=>{
 
-    return(<h1 className=''>Hello</h1>);
+    return(<Navbar/>);
 
 }
 
