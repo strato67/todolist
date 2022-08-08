@@ -1,9 +1,9 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import Modal from './Modal';
 
 
 export default () => {
-
+  const [isShown, setIsShown] = useState(false);
 
 
   return (
@@ -12,7 +12,7 @@ export default () => {
         <a class="btn btn-ghost normal-case text-xl">Todo List</a>
         </div>
         <div class="flex-none">
-        <button class="btn btn-success">
+        <button class="btn btn-success" >
             <a class="normal-case text-lg">Add Event</a>
         </button>
         </div>
