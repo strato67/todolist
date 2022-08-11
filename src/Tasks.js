@@ -8,8 +8,22 @@ let tasks = [
         "date":""
                 
     },
-
-
+    {
+        "_id":2,
+        "name":"Take out the garbage",
+        "description":"It stinks dude",
+        "complete":false,
+        "date":""
+                
+    },
+    {
+        "_id":3,
+        "name":"Make dinner",
+        "description":"Ur gonna starve if u don't man",
+        "complete":false,
+        "date":""
+                
+    },
 
 
 ]
