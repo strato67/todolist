@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const EventCard = ({tasks})=>{
 
 return(
@@ -22,10 +21,6 @@ return(
                     </div>
                     </div>
                 </div>
-
-
-
-
 
             );
         })}

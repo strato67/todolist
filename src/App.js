@@ -8,10 +8,8 @@ const App = ()=>{
     const [todoVar, setTodo] = useState(Tasklist);
 
     return(<>
-        <Navbar/>
+        <Navbar/>      
         <EventCard tasks={todoVar}/>
-
-
 
     </>
     );
