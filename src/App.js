@@ -5,11 +5,28 @@ import Tasklist from './Tasks';
 import './app.css';
 
 const App = ()=>{
-    const [todoVar, setTodo] = useState(Tasklist);
+    const [todo, setTodo] = useState(Tasklist);
 
+    const deleteTask = (id)=>{
+        let copy = todo.filter(task=>task._id !== id);
+        setTodo(copy);
+    }
+
+    const completeTask = (id)=>{
+        let copy = [...todo];
+        copy.find((o,i)=>{
+            if(o._id === id){
+                if(!copy[i].complete){
+                    copy[i].complete = true;
+                }
+                
+            }
+        });
+        setTodo(copy)
+    }
     return(<>
         <Navbar/>      
-        <EventCard tasks={todoVar}/>
+        <EventCard tasks={todo} deleteBtn={deleteTask} completeBtn={completeTask}/>
 
     </>
     );

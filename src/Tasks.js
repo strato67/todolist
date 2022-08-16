@@ -12,7 +12,7 @@ let tasks = [
         "_id":2,
         "name":"Take out the garbage",
         "description":"It stinks dude",
-        "complete":false,
+        "complete":true,
         "date":""
                 
     },
