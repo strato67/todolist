@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
 
-export default () => {
+export default ({newTask}) => {
   
   const [useModal, setuseModal] = useState(false);
 
@@ -14,7 +14,7 @@ export default () => {
         <button className="btn btn-success" onClick={()=>setuseModal(true)} >
             <a className="normal-case text-lg " href='#modal'>Add Event</a>
         </button>
-        {useModal && <Modal closeModal={setuseModal}/>}
+        {useModal && <Modal closeModal={setuseModal} addTask={newTask}/>}
         </div>
     </div>
   )

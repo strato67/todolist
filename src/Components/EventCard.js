@@ -14,6 +14,7 @@ return(
                     <div className="card-body">
                     <h2 className={task.complete? 'card-title line-through' : 'card-title'}>{task.name}</h2>
                     <p className={task.complete? 'line-through' : ''}>{task.description}</p>
+                    <p className={task.complete? 'line-through' : ''}>{task.date}</p>
                     <div className="card-actions flex justify-center gap-4 mt-2">
                         <button className={task.complete ? ' btn btn-disabled btn-accent' : 'btn btn-accent'} onClick={()=>completeBtn(task._id)}>{task.complete ? 'Completed' :'Mark as complete'}</button>
                         <button className="btn btn-error" onClick={()=>deleteBtn(task._id)}>Delete</button>
